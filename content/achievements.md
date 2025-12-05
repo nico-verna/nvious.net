@@ -12,12 +12,12 @@ title: "Achievements"
 <div class="achievements-list">
 <div class="achievement-item">
 <pre class="ascii-trophy gold">
-  ___
- |1ST|
- (   )
-  \_/
-  |=|
- /===\
+ _____
+ | 1ST |
+ (     )
+  \   / 
+   |=|  
+  /===\ 
 </pre>
 <div class="achievement-content">
 <h3>FCS Cybersecurity Competition: CyberForce Team 1st Place</h3>
@@ -41,10 +41,10 @@ TOP 3%
 <div class="achievement-item">
 <pre class="ascii-trophy team">
 o   o   o
- \ | /
-  \|/
-  /|\
- / | \
+ \  |  / 
+  \ | /  
+  / | \  
+ /  |  \ 
 </pre>
 <div class="achievement-content">
 <h3>NCL Team Game: Top 15%</h3>
@@ -53,12 +53,12 @@ o   o   o
 </div>
 <div class="achievement-item">
 <pre class="ascii-trophy silver">
-  ___
- |2ND|
- (   )
-  \_/
-  |=|
- /===\
+  _____
+ | 2ND |
+ (     )
+  \   / 
+   |=|  
+  /===\ 
 </pre>
 <div class="achievement-content">
 <h3>FCS Cybersecurity Competition: CyberForce Team 2nd Place</h3>
@@ -82,7 +82,7 @@ o   o   o
  │ ★ │
  │USA│
  └───┘
-  DOL
+  DOL 
 </pre>
 <div class="achievement-content">
 <h3>U.S. Department of Labor Deputy Secretary Keith Sonderling Student Panel</h3>
@@ -91,12 +91,12 @@ o   o   o
 </div>
 <div class="achievement-item">
 <pre class="ascii-trophy palm">
-   *
-  /|\
+   *  
+  /|\ 
  / | \
-   |
-  PB
- 2025
+   |  
+   TPB  
+  2025 
 </pre>
 <div class="achievement-content">
 <h3>Town of Palm Beach: AI Imagery & How To Identify It</h3>
@@ -105,12 +105,12 @@ o   o   o
 </div>
 <div class="achievement-item">
 <pre class="ascii-trophy palm">
-   *
-  /|\
+   *  
+  /|\ 
  / | \
-   |
-  PB
- 2024
+   |  
+   TPB  
+  2024 
 </pre>
 <div class="achievement-content">
 <h3>Town of Palm Beach: Password Safety & Social Engineering</h3>
@@ -119,12 +119,12 @@ o   o   o
 </div>
 <div class="achievement-item">
 <pre class="ascii-trophy edu">
-  ___
+  ___ 
  /   \
-|PBSC|
+ |PBSC|
  \   /
-  \_/
-CYBER
+  \_/ 
+ CYBER
 </pre>
 <div class="achievement-content">
 <h3>PBSC CyberWeek: Password Safety & Social Engineering</h3>

@@ -21,7 +21,6 @@ title: "About"
 <span class="terminal-prompt">$ </span>
 <span class="terminal-command">./about.sh --verbose</span>
 </div>
-<div class="terminal-line terminal-output">Loading profile data...</div>
 <div class="terminal-line terminal-output">════════════════════════════════════════════════════════</div>
 <div class="terminal-line terminal-output">NAME: Nico V.</div>
 <div class="terminal-line terminal-output">ALIAS: nv_ious</div>

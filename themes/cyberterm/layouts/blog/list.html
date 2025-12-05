@@ -1,0 +1,67 @@
+{{ define "main" }}
+<div class="page-header">
+    <p class="breadcrumb">
+        <a href="/">~</a> / blog
+    </p>
+    <h1>Blog</h1>
+</div>
+
+<section class="section">
+    <div class="section-header">
+        <h2 class="section-title">All Posts</h2>
+        <span class="section-path">~/blog/posts</span>
+    </div>
+
+    <div class="terminal-window">
+        <div class="terminal-titlebar">
+            <span class="terminal-btn red"></span>
+            <span class="terminal-btn yellow"></span>
+            <span class="terminal-btn green"></span>
+            <span class="terminal-title">blog.sh</span>
+        </div>
+        <div class="terminal-body">
+            <div class="terminal-line">
+                <span class="terminal-prompt">$ </span>
+                <span class="terminal-command">ls -la ~/blog/posts/ | sort -r</span>
+            </div>
+            <div class="terminal-line terminal-output">Found {{ len .Pages }} posts...</div>
+        </div>
+    </div>
+
+    {{ range .Pages.ByDate.Reverse }}
+    <article class="blog-card">
+        <div class="card-header">
+            <div>
+                <h3 class="card-title">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h3>
+                {{ if .Description }}
+                <p class="card-subtitle">{{ .Description }}</p>
+                {{ end }}
+            </div>
+            <span class="card-date">{{ .Date.Format "Jan 2, 2006" }}</span>
+        </div>
+        <div class="card-content">
+            {{ if .Params.tags }}
+            <div class="skill-tags">
+                {{ range .Params.tags }}
+                <span class="skill-tag">{{ . }}</span>
+                {{ end }}
+            </div>
+            {{ end }}
+        </div>
+        <div class="blog-card-footer">
+            <a href="{{ .Permalink }}" class="read-more">&gt; READ_MORE</a>
+        </div>
+    </article>
+    {{ end }}
+
+    {{ if eq (len .Pages) 0 }}
+    <div class="card">
+        <div class="card-content">
+            <p>No posts yet. Check back soon!</p>
+        </div>
+    </div>
+    {{ end }}
+</section>
+{{ end }}

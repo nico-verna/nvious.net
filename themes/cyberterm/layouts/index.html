@@ -15,8 +15,9 @@
  ╚═╝  ╚═══╝   ╚═══╝  ╚══════╝ ╚═╝  ╚═════╝   ╚═════╝  ╚══════╝
     </pre>
     <div class="cta-buttons">
-        <a href="/experience/" class="btn btn-primary">&gt; VIEW EXPERIENCE</a>
-        <a href="/contact/" class="btn btn-secondary">&gt; INIT CONTACT</a>
+        <a href="/resume/" class="btn btn-primary">&gt; VIEW RESUME</a>
+        <a href="/blog/" class="btn btn-primary">&gt; VIEW BLOG</a>
+        <a href="/contact/" class="btn btn-secondary">&gt; CONNECT</a>
     </div>
 </section>
 
@@ -53,36 +54,54 @@
 
 <section class="section">
     <div class="section-header">
-        <span class="section-icon">[⚡]</span>
-        <h2 class="section-title">Quick Stats</h2>
-        <span class="section-path">~/stats</span>
+        <h2 class="section-title">Latest Posts</h2>
+        <span class="section-path">~/blog/latest</span>
     </div>
     
-    <div class="skills-grid">
-        <div class="skill-category">
-            <h3 class="skill-category-title">Core Competencies</h3>
-            <div class="skill-tags">
-                <span class="skill-tag">Security Analysis</span>
-                <span class="skill-tag">Digital Forensics</span>
-                <span class="skill-tag">System Administration</span>
-                <span class="skill-tag">Network Security</span>
-                <span class="skill-tag">Incident Response</span>
+    {{ $blogPosts := where .Site.RegularPages "Section" "blog" }}
+    {{ range first 2 ($blogPosts.ByDate.Reverse) }}
+    <article class="blog-card">
+        <div class="card-header">
+            <div>
+                <h3 class="card-title">
+                    <a href="{{ .Permalink }}">{{ .Title }}</a>
+                </h3>
+                {{ if .Description }}
+                <p class="card-subtitle">{{ .Description }}</p>
+                {{ end }}
             </div>
+            <span class="card-date">{{ .Date.Format "Jan 2, 2006" }}</span>
         </div>
-        <div class="skill-category">
-            <h3 class="skill-category-title">Recent Achievements</h3>
+        <div class="card-content">
+            {{ if .Params.tags }}
             <div class="skill-tags">
-                <span class="skill-tag">[1ST] FCS 2025</span>
-                <span class="skill-tag">[TOP 3%] NCL</span>
-                <span class="skill-tag">[MIC] Guest Speaker</span>
+                {{ range .Params.tags }}
+                <span class="skill-tag">{{ . }}</span>
+                {{ end }}
             </div>
+            {{ end }}
         </div>
+        <div class="blog-card-footer">
+            <a href="{{ .Permalink }}" class="read-more">&gt; READ_MORE</a>
+        </div>
+    </article>
+    {{ end }}
+    
+    {{ if eq (len $blogPosts) 0 }}
+    <div class="card">
+        <div class="card-content">
+            <p>Blog posts coming soon...</p>
+        </div>
+    </div>
+    {{ end }}
+    
+    <div style="text-align: center; margin-top: 2rem;">
+        <a href="/blog/" class="btn btn-primary">&gt; VIEW ALL POSTS</a>
     </div>
 </section>
 
 <section class="section">
     <div class="section-header">
-        <span class="section-icon">[📂]</span>
         <h2 class="section-title">Featured Experience</h2>
         <span class="section-path">~/experience/latest</span>
     </div>
@@ -106,7 +125,7 @@
     </div>
     
     <div style="text-align: center; margin-top: 2rem;">
-        <a href="/experience/" class="btn btn-primary">&gt; VIEW ALL EXPERIENCE</a>
+        <a href="/resume/#experience" class="btn btn-primary">&gt; VIEW ALL EXPERIENCE</a>
     </div>
 </section>
 {{ end }}

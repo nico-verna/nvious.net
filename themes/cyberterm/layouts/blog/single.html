@@ -1,0 +1,36 @@
+{{ define "main" }}
+<div class="page-header">
+    <p class="breadcrumb">
+        <a href="/">~</a> / <a href="/blog/">blog</a> / {{ .Title | lower | truncate 30 }}
+    </p>
+    <h1>{{ .Title }}</h1>
+    <div class="post-meta">
+        <span class="post-date">[{{ .Date.Format "2006-01-02" }}]</span>
+        {{ if .Params.tags }}
+        <span class="post-tags">
+            {{ range .Params.tags }}
+            <span class="skill-tag small">{{ . }}</span>
+            {{ end }}
+        </span>
+        {{ end }}
+    </div>
+</div>
+
+<article class="page-content blog-post">
+    {{ .Content }}
+</article>
+
+<div class="post-navigation">
+    <div class="nav-links">
+        {{ with .PrevInSection }}
+        <a href="{{ .Permalink }}" class="nav-prev">&lt; {{ .Title | truncate 40 }}</a>
+        {{ end }}
+        {{ with .NextInSection }}
+        <a href="{{ .Permalink }}" class="nav-next">{{ .Title | truncate 40 }} &gt;</a>
+        {{ end }}
+    </div>
+    <div style="text-align: center; margin-top: 2rem;">
+        <a href="/blog/" class="btn btn-secondary">&gt; BACK TO BLOG</a>
+    </div>
+</div>
+{{ end }}

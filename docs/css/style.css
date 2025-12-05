@@ -830,7 +830,7 @@ body {
 }
 
 .education-card::after {
-    content: '🎓';
+    content: '';
     position: absolute;
     right: 1rem;
     top: 1rem;
@@ -936,5 +936,186 @@ body {
 @media (max-width: 768px) {
     .sunglasses-container {
         display: none;
+    }
+}
+
+/* ═══ Blog Styles ═══ */
+.blog-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.blog-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--cyan-accent);
+    transition: all 0.3s ease;
+}
+
+.blog-card:hover {
+    border-color: var(--border-bright);
+    transform: translateX(5px);
+}
+
+.blog-card:hover::before {
+    background: var(--green-primary);
+    box-shadow: var(--glow-small);
+}
+
+.blog-card .card-title a {
+    color: var(--green-primary);
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.blog-card .card-title a:hover {
+    text-shadow: var(--glow-small);
+}
+
+.blog-card-footer {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.read-more {
+    color: var(--cyan-accent);
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: all 0.3s ease;
+}
+
+.read-more:hover {
+    color: var(--green-primary);
+    text-shadow: var(--glow-small);
+}
+
+/* Blog Post Styles */
+.blog-post {
+    line-height: 1.8;
+}
+
+.post-meta {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.post-date {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.post-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.skill-tag.small {
+    font-size: 0.75rem;
+    padding: 0.15rem 0.5rem;
+}
+
+.post-navigation {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nav-prev, .nav-next {
+    color: var(--cyan-accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.nav-prev:hover, .nav-next:hover {
+    color: var(--green-primary);
+}
+
+/* ═══ Resume Navigation ═══ */
+.resume-nav {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    justify-content: center;
+}
+
+.resume-nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.resume-nav-link:hover {
+    color: var(--green-primary);
+    border-color: var(--border-color);
+    background: var(--green-dark);
+    text-shadow: var(--glow-small);
+}
+
+/* Subsection styling */
+.subsection {
+    margin: 2rem 0;
+}
+
+.subsection-title {
+    color: var(--cyan-accent);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+/* Smooth scroll offset for sticky header */
+section[id] {
+    scroll-margin-top: 180px;
+}
+
+/* Ensure resume nav doesn't get hidden under header */
+.resume-nav {
+    margin-top: 0;
+    scroll-margin-top: 100px;
+}
+
+.page-content {
+    padding-top: 0;
+}
+
+@media (max-width: 768px) {
+    .resume-nav {
+        position: relative;
+        top: 0;
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .resume-nav-link {
+        text-align: center;
     }
 }

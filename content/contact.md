@@ -4,7 +4,6 @@ title: "Contact"
 
 <section class="section">
 <div class="section-header">
-<span class="section-icon">[📡]</span>
 <h2 class="section-title">Initialize Connection</h2>
 <span class="section-path">~/contact/init</span>
 </div>
@@ -50,7 +49,6 @@ title: "Contact"
 
 <section class="section">
 <div class="section-header">
-<span class="section-icon">[💬]</span>
 <h2 class="section-title">Let's Connect</h2>
 <span class="section-path">~/contact/message</span>
 </div>
@@ -73,7 +71,6 @@ title: "Contact"
 
 <section class="section">
 <div class="section-header">
-<span class="section-icon">[📍]</span>
 <h2 class="section-title">Availability</h2>
 <span class="section-path">~/contact/status</span>
 </div>

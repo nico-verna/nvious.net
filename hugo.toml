@@ -1,0 +1,42 @@
+baseURL = 'https://nvious.net/'
+languageCode = 'en-us'
+title = 'Nico V. | Cybersecurity Professional'
+theme = 'cyberterm'
+
+[params]
+  author = "Nico V."
+  description = "Cybersecurity-focused IT professional with hands-on experience in security analysis, digital forensics, and system administration."
+  keywords = ["cybersecurity", "digital forensics", "IT professional", "security analyst"]
+  email = "contact@nvious.net"
+  signal = "https://signal.me/#eu/-i06J2Mm6pXf22tXlpuzJikzlRiKCV5oXB4n-TRFiTWMHbQxJCJCK7g21NeA9ED5"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "About"
+    url = "/about/"
+    weight = 2
+  [[menu.main]]
+    name = "Experience"
+    url = "/experience/"
+    weight = 3
+  [[menu.main]]
+    name = "Skills"
+    url = "/skills/"
+    weight = 4
+  [[menu.main]]
+    name = "Achievements"
+    url = "/achievements/"
+    weight = 5
+  [[menu.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 6
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

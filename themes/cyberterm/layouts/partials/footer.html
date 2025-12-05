@@ -1,0 +1,21 @@
+<footer class="terminal-footer">
+    <div class="footer-line"></div>
+    <div class="footer-content">
+        <div class="footer-info">
+            <span class="status-indicator"></span>
+            <span class="status-text">SYSTEM ONLINE</span>
+        </div>
+        <div class="footer-links">
+            <a href="mailto:{{ .Site.Params.email }}" class="footer-link">
+                <span class="link-icon">[✉]</span> {{ .Site.Params.email }}
+            </a>
+            <span class="separator">|</span>
+            <a href="{{ .Site.Params.signal }}" class="footer-link" target="_blank">
+                <span class="link-icon">[💬]</span> Signal
+            </a>
+        </div>
+        <div class="copyright">
+            <span class="comment">// </span>&copy; {{ now.Year }} {{ .Site.Params.author }}
+        </div>
+    </div>
+</footer>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Nico V. | Cybersecurity Professional</title>
+    <link>https://nvious.net/</link>
+    <description>Recent content in Home on Nico V. | Cybersecurity Professional</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://nvious.net/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://nvious.net/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvious.net/about/</guid>
+      <description>[👤] Profile ~/about/profile.md     about.sh  $  ./about.sh --verbose  Loading profile data... ════════════════════════════════════════════════════════ NAME: Nico V. ALIAS: nv_ious ROLE: Cybersecurity Professional STATUS: Actively seeking opportunities ════════════════════════════════════════════════════════    [📋] Summary ~/about/summary.md  Cybersecurity-focused IT professional with hands-on experience in security analysis, digital forensics, and system administration. Champion of the 3rd Annual FCS Cybersecurity Competition with a top 3% national ranking in NCL competitions.
+I bring proven expertise in Python/C# programming, security tools (Nmap, Hashcat, Wazuh, Velociraptor), and infrastructure management.</description>
+    </item>
+    
+    <item>
+      <title>Achievements</title>
+      <link>https://nvious.net/achievements/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvious.net/achievements/</guid>
+      <description>[🏆] Competition Results ~/achievements/competitions  🥇 FCS Cybersecurity Competition: CyberForce Team 1st Place 2025 • Champion of the 3rd Annual Competition
+  📊 NCL Individual Standard Bracket: Top 3% 2025 • National Cyber League
+  👥 NCL Team Game: Top 15% 2025 • National Cyber League
+  🥈 FCS Cybersecurity Competition: CyberForce Team 2nd Place 2024
+    [🎤] Speaking Engagements ~/achievements/speaking  🏛️ U.S. Department of Labor Deputy Secretary Keith Sonderling Student Panel Guest Speaker</description>
+    </item>
+    
+    <item>
+      <title>Contact</title>
+      <link>https://nvious.net/contact/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvious.net/contact/</guid>
+      <description>[📡] Initialize Connection ~/contact/init     connection.sh  $  ./establish_connection.sh --target nv_ious  Initializing secure connection... Handshake complete ✓ Ready to receive transmission.    [✉] Email contact@nvious.net  [💬] Signal Message on Signal  [🌐] Location Florida, USA
+   [💬] Let&#39;s Connect ~/contact/message  I&#39;m always interested in discussing:
+ Cybersecurity opportunities and collaborations Digital forensics projects Speaking engagements on security topics CTF competitions and security research IT infrastructure and system administration  Feel free to reach out via email for the fastest response.</description>
+    </item>
+    
+    <item>
+      <title>Experience</title>
+      <link>https://nvious.net/experience/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvious.net/experience/</guid>
+      <description>[💼] Professional Experience ~/experience/jobs   Computer Support Intern Palm Beach State College, Lake Worth, FL
+ May 2024 - May 2025   Managed IT help desk operations and resolved technical issues for faculty, staff, and students across multiple campus locations Administered Microsoft 365 and Active Directory, implementing security controls and managing user accounts Documented troubleshooting procedures and created knowledge base articles Provided event support and VIP technology maintenance for executive offices and campus functions     Client Technology Specialist I Palm Beach State College, Lake Worth, FL</description>
+    </item>
+    
+    <item>
+      <title>Skills</title>
+      <link>https://nvious.net/skills/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://nvious.net/skills/</guid>
+      <description>[⌨️] Programming Languages ~/skills/languages  Primary Languages Python C#     [🔒] Security &amp; Forensics ~/skills/security  Penetration Testing Nmap Hashcat Gobuster   Security Monitoring Wazuh Velociraptor Network Security Analysis   Digital Forensics E3 Forensics Evidence Analysis Incident Investigation     [🖥️] Systems &amp; Infrastructure ~/skills/systems  Operating Systems Kali Linux Ubuntu Windows 11 macOS   Virtualization &amp; Containers VMware Proxmox VE Docker   Enterprise Tools Active Directory Microsoft 365     [🤖] Emerging Technologies ~/skills/emerging  AI &amp; Automation Agentic AI Red Teaming MCP Server OpenWebUI        skills_matrix.</description>
+    </item>
+    
+  </channel>
+</rss>

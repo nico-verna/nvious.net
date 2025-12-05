@@ -1,0 +1,26 @@
+{{ define "main" }}
+<div class="page-header">
+    <p class="breadcrumb">
+        <a href="/">~</a> / {{ .Title | lower }}
+    </p>
+    <h1>{{ .Title }}</h1>
+</div>
+
+<div class="page-content">
+    {{ .Content }}
+    
+    {{ range .Pages }}
+    <div class="card">
+        <div class="card-header">
+            <h3 class="card-title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+            {{ with .Params.date }}<span class="card-date">{{ . }}</span>{{ end }}
+        </div>
+        {{ with .Summary }}
+        <div class="card-content">
+            {{ . }}
+        </div>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>
+{{ end }}

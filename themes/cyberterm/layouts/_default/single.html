@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="page-header">
+    <p class="breadcrumb">
+        <a href="/">~</a> / {{ .Title | lower }}
+    </p>
+    <h1>{{ .Title }}</h1>
+</div>
+
+<article class="page-content">
+    {{ .Content }}
+</article>
+{{ end }}

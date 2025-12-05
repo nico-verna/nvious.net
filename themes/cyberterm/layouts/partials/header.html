@@ -1,0 +1,26 @@
+<header class="terminal-header">
+    <div class="header-content">
+        <div class="logo">
+            <a href="{{ "/" | relURL }}">
+                <span class="prompt">root@</span><span class="hostname">nv_ious</span><span class="cursor">_</span>
+            </a>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <nav class="main-nav">
+            <ul>
+                {{ range .Site.Menus.main }}
+                <li>
+                    <a href="{{ .URL }}" class="{{ if $.IsMenuCurrent "main" . }}active{{ end }}">
+                        <span class="nav-prefix">&gt;</span> {{ .Name }}
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+        </nav>
+    </div>
+    <div class="header-line"></div>
+</header>

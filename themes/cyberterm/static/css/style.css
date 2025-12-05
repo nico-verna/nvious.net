@@ -232,7 +232,7 @@ body {
 /* ═══ Hero Image ═══ */
 .hero-image-container {
     position: relative;
-    max-width: 400px;
+    max-width: 500px;
     margin: 0 auto 2rem;
     border: 2px solid var(--border-color);
     overflow: hidden;
@@ -271,12 +271,12 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    filter: sepia(20%) saturate(150%);
+    filter: none;
     transition: all 0.3s ease;
 }
 
 .hero-image-container:hover .hero-image {
-    filter: sepia(10%) saturate(180%);
+    filter: brightness(1.05);
 }
 
 .hero-image-container:hover {
@@ -853,4 +853,81 @@ body {
 .education-card .expected {
     color: var(--text-muted);
     font-size: 0.9rem;
+}
+
+/* ═══ ASCII Art Icons ═══ */
+.ascii-trophy {
+    color: var(--green-primary);
+    font-size: 0.5rem;
+    line-height: 1.1;
+    text-shadow: var(--glow-small);
+    margin: 0;
+    padding: 0;
+    flex-shrink: 0;
+    width: 60px;
+    text-align: center;
+    font-family: var(--font-mono);
+}
+
+.ascii-trophy.gold {
+    color: #ffd700;
+    text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+}
+
+.ascii-trophy.silver {
+    color: #c0c0c0;
+    text-shadow: 0 0 5px rgba(192, 192, 192, 0.5);
+}
+
+.ascii-trophy.chart,
+.ascii-trophy.team,
+.ascii-trophy.govt,
+.ascii-trophy.palm,
+.ascii-trophy.edu {
+    color: var(--green-primary);
+}
+
+/* ═══ Draggable Sunglasses ═══ */
+.sunglasses-container {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    z-index: 9999;
+    cursor: grab;
+    user-select: none;
+    transition: transform 0.1s ease;
+}
+
+.sunglasses-container:active {
+    cursor: grabbing;
+}
+
+.sunglasses-container:hover {
+    transform: scale(1.1);
+}
+
+.sunglasses-container:hover .sunglasses-hint {
+    opacity: 1;
+}
+
+.sunglasses-ascii {
+    color: var(--green-primary);
+    font-family: var(--font-mono);
+    font-size: 0.7rem;
+    line-height: 1;
+    text-shadow: var(--glow-medium), 0 0 2px #000, 0 0 4px #000;
+    white-space: pre;
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+
+.sunglasses-hint {
+    font-size: 0.55rem;
+    color: var(--green-primary);
+    text-align: center;
+    margin-top: 2px;
+    text-shadow: 0 0 3px #000, 0 0 5px #000;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
 }

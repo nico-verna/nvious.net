@@ -4,35 +4,62 @@ title: "Achievements"
 
 <section class="section">
 <div class="section-header">
-<span class="section-icon">[🏆]</span>
+<span class="section-icon">[#]</span>
 <h2 class="section-title">Competition Results</h2>
 <span class="section-path">~/achievements/competitions</span>
 </div>
 
 <div class="achievements-list">
 <div class="achievement-item">
-<span class="achievement-icon">🥇</span>
+<pre class="ascii-trophy gold">
+  ___
+ |1ST|
+ (   )
+  \_/
+  |=|
+ /===\
+</pre>
 <div class="achievement-content">
 <h3>FCS Cybersecurity Competition: CyberForce Team 1st Place</h3>
 <p>2025 • Champion of the 3rd Annual Competition</p>
 </div>
 </div>
 <div class="achievement-item">
-<span class="achievement-icon">📊</span>
+<pre class="ascii-trophy chart">
+ ___
+|▓▓▓|
+|▓▓ |
+|▓  |
+|___|
+TOP 3%
+</pre>
 <div class="achievement-content">
 <h3>NCL Individual Standard Bracket: Top 3%</h3>
 <p>2025 • National Cyber League</p>
 </div>
 </div>
 <div class="achievement-item">
-<span class="achievement-icon">👥</span>
+<pre class="ascii-trophy team">
+o   o   o
+ \ | /
+  \|/
+  /|\
+ / | \
+</pre>
 <div class="achievement-content">
 <h3>NCL Team Game: Top 15%</h3>
 <p>2025 • National Cyber League</p>
 </div>
 </div>
 <div class="achievement-item">
-<span class="achievement-icon">🥈</span>
+<pre class="ascii-trophy silver">
+  ___
+ |2ND|
+ (   )
+  \_/
+  |=|
+ /===\
+</pre>
 <div class="achievement-content">
 <h3>FCS Cybersecurity Competition: CyberForce Team 2nd Place</h3>
 <p>2024</p>
@@ -43,35 +70,62 @@ title: "Achievements"
 
 <section class="section">
 <div class="section-header">
-<span class="section-icon">[🎤]</span>
+<span class="section-icon">[>_]</span>
 <h2 class="section-title">Speaking Engagements</h2>
 <span class="section-path">~/achievements/speaking</span>
 </div>
 
 <div class="achievements-list">
 <div class="achievement-item">
-<span class="achievement-icon">🏛️</span>
+<pre class="ascii-trophy govt">
+ ┌───┐
+ │ ★ │
+ │USA│
+ └───┘
+  DOL
+</pre>
 <div class="achievement-content">
 <h3>U.S. Department of Labor Deputy Secretary Keith Sonderling Student Panel</h3>
 <p>Guest Speaker</p>
 </div>
 </div>
 <div class="achievement-item">
-<span class="achievement-icon">🌴</span>
+<pre class="ascii-trophy palm">
+   *
+  /|\
+ / | \
+   |
+  PB
+ 2025
+</pre>
 <div class="achievement-content">
 <h3>Town of Palm Beach: AI Imagery & How To Identify It</h3>
 <p>2025 • Guest Speaker</p>
 </div>
 </div>
 <div class="achievement-item">
-<span class="achievement-icon">🌴</span>
+<pre class="ascii-trophy palm">
+   *
+  /|\
+ / | \
+   |
+  PB
+ 2024
+</pre>
 <div class="achievement-content">
 <h3>Town of Palm Beach: Password Safety & Social Engineering</h3>
 <p>2024 • Guest Speaker</p>
 </div>
 </div>
 <div class="achievement-item">
-<span class="achievement-icon">🎓</span>
+<pre class="ascii-trophy edu">
+  ___
+ /   \
+|PBSC|
+ \   /
+  \_/
+CYBER
+</pre>
 <div class="achievement-content">
 <h3>PBSC CyberWeek: Password Safety & Social Engineering</h3>
 <p>2024 • Guest Speaker</p>
